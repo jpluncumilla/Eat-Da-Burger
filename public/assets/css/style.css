@@ -1,0 +1,80 @@
+body {
+	color: #AB2910;
+	font-family: 'Trocchi', serif;
+	background-color: #85d2ff
+
+	height: 100%;
+}
+
+li {
+  padding: 10px;
+  list-style: none;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.jumbotron {
+	background-color: rgb(204, 220, 255);
+	color: #AB2910;
+	background-image: url("https://i.imgur.com/du6uebv.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.fa-cutlery {
+	color: #67860F;
+}
+
+.lead {
+	font-weight: bold;
+}
+
+.card-header {
+	background-color: #FFFFCC;
+	font-size: 20px;	
+}
+
+.btn {
+	background-color: #7DA315;
+}
+
+footer {
+  font-size: 15px;
+  padding-top: 20px;
+  min-height: 10%;
+  overflow: auto;
+  color: #006666;
+}
+
+.wrapper {
+	min-height: 90%;
+	margin-bottom: 30px;
+}	
+
+.navLink:link,
+.navLink:visited,
+.navLink:hover,
+.navLink:active {
+	color: #006666;
+}
+
+.card-body {
+	background-color: rgb(128, 123, 119);
+	background: linear-gradient(to right, rgba(25, 0, 255, 0), rgba(0, 4, 255, 0.5));
+}
+
+input[type="text"] {
+	background-color: #FEFEF2;
+}

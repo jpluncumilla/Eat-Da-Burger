@@ -1,0 +1,81 @@
+<div class="container wrapper">
+    <div class="jumbotron text-right">
+      <h1 class="display-3"><strong> Eat Da Burger</strong></h1>
+   
+      <p class="lead mt-4"><i class="fa fa-cutlery" aria-hidden="true"></i> All you can eat Burger Buffet!</p>
+             
+    </div>
+    <div class="row text-center">
+      <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-header">
+          Add a Burger
+        </div>
+        <div class="card-body">
+          <form class="create-form">
+            <div class="form-group">
+            <label for="burgerName">Burger Name:</label>
+            <input type="text" id="name" name="burgerName">
+            </div>
+            <button type="submit" class="btn">Add a Burger</button>
+          </form>
+        </div>
+      </div>      
+    </div>
+  </div> 
+  <div class="row mt-4">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header text-center">
+          Burgers Waiting To Be Devoured</div>
+        <div class="card-body">
+          <p class="card-text">
+            <ul>
+              {{#each burgers}}
+                {{#unless devoured}}
+                <li>
+                <div class="row">
+                  <div class="col">
+                  {{ burger_name }}
+                  </div>
+                  <div class="col">
+                   <button class="btn devour-btn" data-id={{id}} data-status={{devoured}}>Devour It!</button>
+                   </div> 
+                </div>   
+                </li>
+                {{/unless}}
+              {{/each}}
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header text-center">
+          Burgers Already Devoured
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <ul>
+              {{#each burgers}}
+                {{#if devoured}}
+                <li>
+                {{ burger_name }} 
+                {{formatDate date}}
+                </li>
+                {{/if}}
+              {{/each}}
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer text-center">
+    <div class="container align-middle">
+      <p><a class="navLink" href="https://github.com/iamjpyo/Eat-Da-Burger" target="_blank">GitHub Repo</a></p>
+      <p>@Copyright JP Luncumilla</p>
+    </div>  
+</footer>
